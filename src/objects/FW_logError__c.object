@@ -166,6 +166,18 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>FW_aplicationCode__c</fullName>
+        <description>Code of the application where the error is being generated</description>
+        <externalId>false</externalId>
+        <label>Application Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <label>Error Log</label>
     <nameField>
         <displayFormat>Log-{000000000}</displayFormat>
