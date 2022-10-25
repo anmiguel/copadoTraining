@@ -166,7 +166,103 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>FW_aplicationCode__c</fullName>
+        <description>Code of the application where the error is being generated</description>
+        <externalId>false</externalId>
+        <label>Application Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FW_class__c</fullName>
+        <description>Apex class where the error occurred</description>
+        <externalId>false</externalId>
+        <label>Class</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FW_errorDate__c</fullName>
+        <description>date the error occurs</description>
+        <externalId>false</externalId>
+        <label>Error Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>FW_errorMessage__c</fullName>
+        <description>error message released by the system</description>
+        <externalId>false</externalId>
+        <label>Error message</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>FW_errorUser__c</fullName>
+        <description>User logged in that has produced the error</description>
+        <externalId>false</externalId>
+        <label>Error User</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FW_method__c</fullName>
+        <description>Class method where the error occurs</description>
+        <externalId>false</externalId>
+        <label>Method</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <label>Error Log</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>FW_aplicationCode__c</columns>
+        <columns>FW_class__c</columns>
+        <columns>FW_method__c</columns>
+        <columns>FW_errorMessage__c</columns>
+        <columns>FW_errorDate__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>App_DGS</fullName>
+        <columns>NAME</columns>
+        <columns>FW_aplicationCode__c</columns>
+        <columns>FW_class__c</columns>
+        <columns>FW_method__c</columns>
+        <columns>FW_errorMessage__c</columns>
+        <columns>FW_errorDate__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>FW_aplicationCode__c</field>
+            <operation>equals</operation>
+            <value>DGS</value>
+        </filters>
+        <label>App DGS</label>
+    </listViews>
     <nameField>
         <displayFormat>Log-{000000000}</displayFormat>
         <label>Log</label>
@@ -175,6 +271,12 @@
     </nameField>
     <pluralLabel>Error Log</pluralLabel>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>FW_apexError</fullName>
+        <active>true</active>
+        <description>record type for apex errors</description>
+        <label>Apex Error</label>
+    </recordTypes>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
