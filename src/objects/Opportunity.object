@@ -211,6 +211,17 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>Despliegue1__c</fullName>
+        <externalId>false</externalId>
+        <label>Despliegue1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Discovery_Completed__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
