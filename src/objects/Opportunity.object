@@ -293,6 +293,28 @@
         <trackTrending>false</trackTrending>
     </fields>
     <fields>
+        <fullName>Prueba_Copado1__c</fullName>
+        <externalId>false</externalId>
+        <label>Prueba_Copado1</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prueba_Copado2__c</fullName>
+        <externalId>false</externalId>
+        <label>Prueba_Copado2</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>ROI_Analysis_Completed__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
