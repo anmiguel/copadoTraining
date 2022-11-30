@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Error Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Error Log</value>
+    </caseValues>
+    <fields>
+        <label><!-- StackTrace --></label>
+        <name>FW_StackTrace__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Code --></label>
+        <name>FW_aplicationCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class --></label>
+        <name>FW_class__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Date --></label>
+        <name>FW_errorDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error message --></label>
+        <name>FW_errorMessage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error User --></label>
+        <name>FW_errorUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Method --></label>
+        <name>FW_method__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <recordTypes>
+        <description><!-- record type for apex errors --></description>
+        <label><!-- Apex Error --></label>
+        <name>FW_apexError</name>
+    </recordTypes>
+</CustomObjectTranslation>
